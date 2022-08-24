@@ -1,4 +1,10 @@
 // Unit tests for the helloWorld function
+//decribe takes 2 parameters; 1st is string, 2nd is an anonymous function
+// this one function has several calls known as the "it" function
+// "it" function includes a message, title of the specification(spec), also takes function() as a second parameter
+// everything within the it function is known as the acceptance criteria
+// the ones with the "expect" are expectations // 2 parts an assertion and a matcher
+//
 describe('helloWorld', function() {
     it('should be a defined function', function() {
       expect(typeof helloWorld).toBe('function');
@@ -12,4 +18,10 @@ describe('helloWorld', function() {
     it("should never return 'undefined' when called", function() {
       expect(helloWorld()).not.toBe(undefined);
     });
+describe('sayHello', function() {
+    it('should be a defined function', function () {
+        expect(typeof sayHello).toBe('function');
+    });
+});
+
 });
