@@ -40,6 +40,14 @@ describe('sayHello', function() {
     it('should return "Hello, World!"', function(){
         expect(sayHello(false)).toBe("Hello, World!");
     });
+describe('isFive', function() {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a number when called', function() {
+        expect(typeof isFive()).toBe("number");
+    });
+});
 });
 
 });

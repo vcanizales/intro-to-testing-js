@@ -26,3 +26,7 @@ function sayHello(input) {
             return "Hello," + " " + input + "!";
         }
 }
+
+function isFive(input){
+    return typeof input === 'number';
+}
